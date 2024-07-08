@@ -6,9 +6,14 @@
 #include "esp_chip_info.h"
 #include "esp_flash.h"
 
+// asmsharp functions
+extern void print_from_asmsharp();
+//
+
 void app_main(void) {
-  printf("Hello world!\n");
-  fflush(stdout);
-  vTaskDelay(1000 / portTICK_PERIOD_MS);
-  esp_restart();
+//  printf("Hello world!\n");
+//  fflush(stdout);
+//  vTaskDelay(1000 / portTICK_PERIOD_MS);
+//  esp_restart();
+  print_from_asmsharp();
 }
